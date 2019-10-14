@@ -1,7 +1,6 @@
 from tkinter import * 
 from tkinter import ttk 
-from PIL import Image, ImageTk
-from PIL.ImageTk import PhotoImage 
+from PIL import Image
 import os, sys  
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 from tkinter.messagebox import showerror, askyesno
@@ -118,10 +117,6 @@ class ResizeImages(Frame):
 		img_file=askopenfilename()
 		self.filepath.set(img_file)
 		
-
-
-
-
 
 if __name__ == '__main__':
 	win = ResizeImages()
