@@ -2,9 +2,7 @@ from tkinter import *
 from tkinter import ttk 
 from tkinter.messagebox import showerror, showinfo, askyesno, askokcancel
 from tkinter.filedialog import askdirectory, askopenfilename, asksaveasfile
-from tkinter import Scrollbar
-from PIL import Image , ImageTk
-from PIL.ImageTk import PhotoImage
+from PIL import Image
 import os, sys
 
 class ImageResize(Frame):
