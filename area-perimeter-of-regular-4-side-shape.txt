@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+ 
+
+int main(){
+	/*Calculates the area and perimeter of rectangle and square and finds them out
+	parameters: 
+	height: enter the height of shape
+	width: enter the width of shape
+	return: shape name (rectangle or square) and its area and perimeter
+	*/
+	float height = 0, width=0;
+	float area=0, perimeter=0;
+	string shape = " "; 
+	cout<<"Enter values for the height and width of your shape:"<<endl; 
+	cin>>height>>width; 
+	if (height==width)
+		shape = "square"; 
+	else 
+		shape = "rectangle"; 
+	area = height * width; 
+	perimeter = (height + width) * 2; 
+	cout<<"The area of your "<< shape<<" is: "<<area<<" and its perimeter is: "<<perimeter<<endl;
+
+return 0; 
+}
