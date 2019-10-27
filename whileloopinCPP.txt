@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int marks = 0, numberOfStudents = 0, totalMarks = 0;
+    cout << "Enter the marks for students or a negative value to quit: " <<endl;
+    cin >> marks;
+    while (marks >= 0)
+    {
+        totalMarks += marks;
+        numberOfStudents++;
+        cin >> marks;
+    }
+    cout << "The total number of students is: " << numberOfStudents <<endl;
+    cout << "The total marks of all students is: " << totalMarks <<endl;
+    cout << "The average mark of students is: " << totalMarks / numberOfStudents <<endl;
+    return 0;
+}
